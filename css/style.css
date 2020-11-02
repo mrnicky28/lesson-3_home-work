@@ -1,163 +1,147 @@
-html{
-    overflow-x:hidden;
-}
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    font-family: Raleway, Arial, "sans-serif";
 }
-
-header {
-    width: 1402px;
-    height: 64px;
+/*Header*/
+.page-header {
+    width: 100%;
+    min-width: 1402px;
+    z-index: 1000;
     background-color: black;
 }
 
 .header-content {
+    padding: 18px 0;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 141px 19px 143px;
     width: 1118px;
-    height: 27px;
 }
 
 .menu-main {
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .menu-main li {
+    margin: 0 22px 0 0;
     display: inline-block;
 }
 
+.menu-main li:last-child {
+    margin: 0;
+}
+
 .menu-link {
-    padding: 0 0 0 22px;
+    padding: 20px 0;
     text-decoration: none;
-    width: 52px;
-    height: 12px;
     opacity: 0.69;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    font-weight: 400;
-
+    transition: color 0.25s linear;
 }
 
+.menu-link:hover {
+    color: #FA8F21;
+}
 
-.screen {
-    width: 1402px;
-    height: 650px;
+/*Screen*/
+
+.main-screen {
+    width: 100%;
+    min-width: 1402px;
+    background-position: center;
     background-color: black;
+    background-size: 100%;
     background-image: url(../img/bg-header.png);
-
-
 }
 
-.screen-content {
+.main-screen-content {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 102px 140px 150px 145px;
-    width: 1117px;
-    height: 398px;
+    width: 1118px;
 
 }
 
-.download {
+.information-wrapper {
     width: 542px;
-    height: 398px;
 }
 
-.text-modern {
-    margin: 0;
-    padding: 32px 0 0 0;
+.main-screen-logo {
+    margin-bottom: 32px;
+}
+
+.main-screen-title {
     width: 542px;
-    height: 85px;
-    font-family: Raleway;
     font-size: 36px;
     line-height: 42px;
     color: #FFFFFF;
 }
 
-.line-modern {
-    margin: 32px 0 0 0;
+.main-screen-title:after {
+    content: "";
+    margin: 32px 0 32px 0;
+    display: block;
     width: 100px;
     height: 2px;
-    border: none;
     background-color: #ffffff;
-
 }
 
-.text-lorem {
-    padding: 32px 0 0 0;
+.main-screen-subtitle {
+    margin: 0 0 42px 0;
     width: 491px;
-    height: 71px;
     color: #ffffff;
-    font-family: Raleway;
     font-size: 16px;
     font-weight: 300;
     line-height: 23px;
 }
 
-.button-download {
-    margin: 42px 0 0 0;
+.main-screen-button-download {
+    box-sizing: border-box;
     width: 134px;
-    height: 38px;
+    height: 42px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     background: transparent;
-    font-family: Raleway;
+    font-family: Raleway, Arial, "sans-serif";
     color: #ffffff;
     font-size: 15px;
     font-weight: 600;
-    line-height: 18px;
-
 }
 
-.button-download:hover {
-    margin: 42px 0 0 0;
-    width: 134px;
-    height: 38px;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
+.main-screen-button-download:hover {
+    cursor: pointer;
     background: #ffffff;
-    font-family: Raleway;
     color: #000000;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 18px;
-    text-align: center;
-    transition: background-color 0.6s;
+    transition: background-color 0.7s linear;
 }
 
 .form {
-    position: relative;
-    margin: 30px 0 0 0;
+    margin-top: 26px;
     width: 360px;
-    height: 314px;
     border-radius: 6px 6px 6px 6px;
     background-color: #ffffff;
 }
 
 .header-form {
-    position: absolute;
-    top: -46px;
-    width: 360px;
-    height: 54px;
+    margin-bottom: 36px;
     border-radius: 6px 6px 0 0;
     background-color: #DFDFDF;
 }
 
 .header-form-text {
-    padding: 16px 61px 15px 61px;
-    width: 238px;
-    height: 23px;
+    padding: 15px 0;
+    text-align: center;
     color: #333333;
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 800;
-    text-align: center;
-
 }
 
 .free {
@@ -165,16 +149,17 @@ header {
 }
 
 .main-form {
-    padding: 36px 42px 110px 42px;
-    width: 276px;
-    height: 168px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 56px;
 }
 
 .main-input {
     padding: 0 0 0 10px;
     width: 276px;
     height: 32px;
-    font-family: Raleway;
+    font-family: Raleway, Arial, "sans-serif";
     font-size: 14px;
     border: none;
     border-bottom: 1px solid #d6d6d6;
@@ -196,46 +181,39 @@ input::placeholder {
 }
 
 .footer-form {
-    position: absolute;
-    bottom: 0;
-    width: 360px;
+    width: 100%;
     height: 54px;
     border: none;
     border-radius: 0 0 6px 6px;
     background-color: #ff9b51;
+
+    color: #ffffff;
+    font-family: Raleway, Arial, "sans-serif";
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .footer-form:hover {
-    width: 360px;
-    height: 54px;
-    border: none;
-    border-radius: 0 0 6px 6px;
+    cursor: pointer;
     background-color: #e97724;
     transition: background-color 0.6s;
 }
 
-.footer-form-text {
-    padding: 18px 139px 18px 139px;
-    width: 82px;
-    height: 18px;
-    color: #ffffff;
-    font-family: Raleway;
-    font-size: 15px;
-    font-weight: 600;
-    text-align: center;
-}
+/*Social-media*/
 
 .social-media {
-    width: 1402px;
-    height: 105px;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    min-width: 1402px;
     background: #FFFFFF;
     box-shadow: 0 -1px 13px rgba(0, 0, 0, 0.25);
 }
 
 .content-social-media {
-    padding: 18px 139px 17px 144px;
+    margin: 0 auto;
+    padding: 17px 142px 17px 142px;
     width: 1119px;
-    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,26 +222,18 @@ input::placeholder {
 
 .text-content-social-media {
     width: 390px;
-    height: 70px;
 }
 
 .heading-social-media {
-    margin: 0;
-    width: 152px;
-    height: 23px;
-    font-family: Raleway;
+    margin: 0 0 6px 0;
     font-weight: bold;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.2em;
     color: #333333;
 }
 
-.lorem-social-media {
+.subtitle-social-media {
     margin: 0;
-    padding: 6px 0 0 0;
-    width: 390px;
-    height: 41px;
-    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -272,10 +242,18 @@ input::placeholder {
 }
 
 .social-icons {
-    width: 400px;
-    height: 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+}
+
+.social-icons li {
+    margin: 0 32px 0 0;
+}
+
+.social-icons li:last-child {
+    margin: 0;
 }
 
 .img-social {
@@ -288,19 +266,21 @@ input::placeholder {
     opacity: 1;
 }
 
+/*Tabs*/
+
 .tabs {
-    width: 1402px;
-    height: 598px;
+    width: 100%;
+    min-width: 1402px;
     background: #F5F5F5;
 }
 
 .tabs-content {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 131px 143px 131px 143px;
     width: 1116px;
-    height: 336px;
 }
 
 .squares-content {
@@ -308,29 +288,32 @@ input::placeholder {
     flex-direction: column;
 }
 
-.buttons-tab{
+.buttons-tab {
+    cursor: pointer;
+    padding: 0;
     width: 112px;
     height: 112px;
     background: #333333;
     border: none;
 
-    font-family: Raleway;
+    font-family: Raleway, Arial, "sans-serif";
     font-weight: bold;
     font-size: 15px;
     line-height: 20px;
 
     color: #FFFFFF;
 }
+
 .button-tab-1 {
     border-radius: 4px 4px 0 0;
+    margin-bottom: 2px;
 }
 
 .button-tab-2 {
-    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .button-tab-3 {
-    margin-top: 2px;
     border-radius: 0 0 4px 4px;
 }
 
@@ -351,12 +334,10 @@ input::placeholder {
 
 .text-content {
     width: 506px;
-    height: 295px;
 }
 
-.tabs-heading {
-    margin: 0;
-    font-family: Raleway;
+.heading-tabs {
+    margin: 0 0 42px 0;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -365,13 +346,8 @@ input::placeholder {
     color: #000000;
 }
 
-.subtitle-lorem {
-    margin: 0;
-    text-align: justify;
-    width: 506px;
-    height: 146px;
-    padding-top: 42px;
-    font-family: Raleway;
+.subtitle-tabs {
+    margin: 0 0 42px 0;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -381,14 +357,17 @@ input::placeholder {
     color: #86878B;
 }
 
+.second-subtitle-tabs {
+    margin: 0 0 42px 0;
+}
+
 .tabs-button-download {
-    margin-top: 42px;
     width: 134px;
     height: 42px;
     background: #FA8F21;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    font-family: Raleway;
+    font-family: Raleway, Arial, "sans-serif";
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -396,19 +375,26 @@ input::placeholder {
 }
 
 .tabs-button-download:hover {
+    cursor: pointer;
     background: #333333;
     transition: background-color 0.6s;
 }
 
+.image-content {
+    margin-top: 19px;
+}
+
+/*Awesome*/
+
 .awesome {
-    width: 1402px;
-    height: 587px;
+    width: 100%;
+    min-width: 1402px;
 }
 
 .awesome-content {
+    margin: 0 auto;
     padding: 102px 144px 113px 144px;
     width: 1114px;
-    height: 372px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -419,14 +405,15 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 66px;
     width: 640px;
-    height: 109px;
+
 
 }
 
 .main-heading {
+    text-align: center;
     margin: 0;
-    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -434,23 +421,17 @@ input::placeholder {
     color: #212121;
 }
 
-.line-heading {
-    margin: 22px 0 0 0;
-    width: 64px;
+.main-heading:after {
+    content: "";
+    margin: 22px auto;
+    display: flex;
+    width: 100px;
     height: 2px;
-    border: none;
-    background-color: #FF8B38;
-}
-
-.awesome-line{
-    width: 102px;
-    height: 2px;
+    background-color: #FA8F21;
 }
 
 .subtitle-heading {
     margin: 0;
-    padding: 22px 0 0 0;
-    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -459,23 +440,18 @@ input::placeholder {
 }
 
 .awesome-columns {
-    padding: 66px 0 0 0;
     width: 1131px;
+    text-align: center;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
-.column-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.awesome-columns-image {
+    margin-bottom: 27px;
 }
 
 .column-heading {
-    margin: 0;
-    padding: 27px 0 0 0;
-    font-family: Raleway;
+    margin: 0 0 16px 0;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -485,10 +461,8 @@ input::placeholder {
 
 .column-subtitle {
     margin: 0;
-    padding: 16px 0 0 0;
     width: 349px;
-    height: 62px;
-    font-family: Raleway;
+    text-align: center;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -496,74 +470,70 @@ input::placeholder {
     color: #86878B;
 }
 
+/*Pricing*/
+
 .pricing {
-    width: 1402px;
-    height: 900px;
+    width: 100%;
+    min-width: 1402px;
     background: #F5F5F5;
 }
 
 .pricing-content {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 102px 146px 111px 147px;
     width: 1109px;
-    height: 687px;
+}
+
+.pricing-text-content {
+    margin: 0 0 81px 0;
+}
+
+.pricing-heading:after {
+    width: 64px;
 }
 
 .pricing-slots {
     display: flex;
     justify-content: space-between;
-    align-items: end;
-
-    padding: 81px 146px 111px 147px;
+    align-items: flex-end;
     width: 1109px;
-    height: 497px;
 }
 
 .cards {
     width: 343px;
-    height: 497px;
 }
 
 .card-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 17px 0;
+    text-align: center;
     width: 343px;
-    height: 59px;
     background: #333333;
-    font-family: Raleway;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+    border-bottom: #FFFFFF 1px solid;
 }
 
 .card-price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1px 0 0 0;
+    padding: 38px 0;
+    text-align: center;
     width: 343px;
-    height: 100px;
     background: #333333;
-    font-family: Raleway;
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
-
     color: #FFFFFF;
+    border-bottom: #FFFFFF 1px solid;
 }
 
 .card-sub-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1px 0 0 0;
+    padding: 13px 0;
+    text-align: center;
     width: 343px;
-    height: 50px;
-    font-family: Raleway;
     font-style: italic;
     font-weight: 600;
     font-size: 14px;
@@ -571,98 +541,94 @@ input::placeholder {
 
     color: rgba(255, 255, 255, 0.7);
     background: #333333;
+    border-bottom: #FF8B38 5px solid;
 }
 
-.card-slider {
+.card-slider{
+    padding: 8px 0;
+    text-align: center;
     width: 343px;
-    height: 5px;
-    background: #FF8B38;
-}
-
-.card-slider-middle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 343px;
-    height: 40px;
     background: #FF8B38;
 
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
 
 
-
     color: #FFFFFF;
 }
 
 .card-feature {
-    margin: 1px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 8px 0;
+    text-align: center;
     text-transform: uppercase;
     width: 343px;
-    height: 40px;
     background: #FFFFFF;
-    font-family: Raleway;
     font-size: 14px;
     line-height: 24px;
 
     color: #86878B;
+    border-bottom: #F5F5F5 1px solid;
 }
 
-.card-feature:nth-child(6) {
-    margin: 2px 0 0 0;
+.card-feature:nth-child(4) {
+    border-bottom: #F5F5F5 2px solid;
 }
+
+.card-professional .card-feature:nth-child(5) {
+    border-bottom: #F5F5F5 2px solid;
+}
+
+/*Testimonials*/
 
 .testimonials {
-    width: 1402px;
-    height: 594px;
+    width: 100%;
+    min-width: 1402px;
 }
 
 .testimonials-content {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 73px 159px 102px 177px;
     width: 1066px;
-    height: 419px;
+}
+
+.testimonials-text-content {
+    margin: 0 0 85px 0;
+}
+
+.testimonials-heading:after {
+    width: 64px;
 }
 
 .block-of-comments {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 1066px;
-    height: 225px;
-    }
+}
 
 .comment {
     width: 290px;
-    height: 225px;
 }
 
 .text-comment {
-    display: flex;
-    align-items: flex-end;
     margin: 0;
     padding: 25px 0 18px 12px;
     background: #F5F5F5;
-    font-family: Raleway;
     font-style: italic;
     font-weight: normal;
-    text-align: left;
     font-size: 14px;
     line-height: 16px;
     color: #86878B;
 }
 
-.triangle {
-    margin: 0 0 0 25px;
+.place-comment:after {
+    content: "";
+    margin: 0 0 11px 25px;
+    display: block;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -673,17 +639,13 @@ input::placeholder {
 .user {
     display: flex;
     align-items: center;
-    padding: 11px 0 0 0;
 }
 
 .user-information {
-    display: flex;
-    flex-direction: column;
     padding: 0 0 0 16px;
 }
 
 .user-name {
-    font-family: Raleway;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
@@ -691,30 +653,46 @@ input::placeholder {
 }
 
 .user-profession {
-    font-family: Raleway;
     font-size: 14px;
     line-height: 16px;
     color: #86878B;
 }
 
+/*Custom*/
+
 .custom {
-    width: 1402px;
-    height: 297px;
-    background-color: rgba(51, 51, 51, 0.58);
-    background-image: url(../img/custom/architecture.svg);
+    width: 100%;
+    min-width: 1402px;
+    background-blend-mode: multiply;
+    background-image: url(../img/custom/architecture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+
+
 }
 
 .custom-content {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 54px 494px 54px 490px;
     width: 416px;
-    height: 189px;
 }
 
 .custom-text-color {
     color: #FFFFFF;
+}
+
+.custom-text-color.main-heading:after {
+    content: "";
+    margin: 22px auto;
+    display: flex;
+    width: 64px;
+    height: 2px;
+    background-color: #FFFFFF;
 }
 
 .custom-line {
@@ -729,36 +707,51 @@ input::placeholder {
     margin: 38px 0 0 0;
 }
 
+/*Contact*/
+
 .contact {
-    width: 1402px;
-    height: 638px;
+    width: 100%;
+    min-width: 1402px;
 }
 
 .contact-content {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 73px 155px 105px 155px;
     width: 1092px;
-    height: 460px;
+}
+
+.main-heading:after {
+    content: "";
+    margin: 22px auto;
+    display: flex;
+    width: 64px;
+    height: 2px;
+    background-color: #FA8F21;
+}
+
+.contact-text-content {
+    margin: 0 0 119px 0;
 }
 
 .input-forms {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 46px;
     width: 1092px;
-    height: 152px;
 }
 
 .contact-form {
     padding: 0;
     width: 527px;
-    height: 152px;
+    margin-bottom: 0;
 }
 
 .contact-input {
-    padding: 0;
+    padding: 0 0 0 10px;
     width: 527px;
     height: 32px;
 }
@@ -767,14 +760,13 @@ input::placeholder {
     margin-bottom: 28px;
 }
 
-
 textarea {
     resize: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 0 0 10px;
     width: 509px;
     height: 152px;
-    font-family: Raleway;
+    font-family: Raleway, Arial, "sans-serif";
     font-size: 14px;
     border: none;
     border-bottom: 1px solid #d6d6d6;
@@ -791,29 +783,34 @@ textarea::placeholder {
     opacity: 0.67;
 }
 
+/*Footer*/
+
 footer {
-    width: 1402px;
-    height: 124px;
+    width: 100%;
+    min-width: 1402px;
     background-color: #000000;
 }
 
 .footer-content {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 28px 519px 28px 519px;
     width: 362px;
-    height: 68px;
 }
 
-.footer-icons{
-    width: 362px;
+.footer-icons {
+    margin: 0 0 22px 0;
+}
+
+.footer-img-social {
+    width: 32px;
     height: 32px;
 }
 
 .copyright {
-    font-family: Raleway;
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
