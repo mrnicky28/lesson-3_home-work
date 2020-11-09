@@ -1,8 +1,11 @@
+@import "variables.css";
+
 body {
     margin: 0 auto;
     padding: 0;
     font-family: Raleway, Arial, "sans-serif";
 }
+
 /*Header*/
 .page-header {
     width: 100%;
@@ -39,14 +42,14 @@ body {
     padding: 20px 0;
     text-decoration: none;
     opacity: 0.69;
-    color: #ffffff;
+    color: var(--color-default);
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: var(--text-size);
     transition: color 0.25s linear;
 }
 
 .menu-link:hover {
-    color: #FA8F21;
+    color: var(--color-primary-100);
 }
 
 /*Screen*/
@@ -82,22 +85,22 @@ body {
     width: 542px;
     font-size: 36px;
     line-height: 42px;
-    color: #FFFFFF;
+    color: var(--color-default);
 }
 
 .main-screen-title:after {
     content: "";
-    margin: 32px 0 32px 0;
+    margin: 32px 0;
     display: block;
     width: 100px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: var(--color-default);
 }
 
 .main-screen-subtitle {
     margin: 0 0 42px 0;
     width: 491px;
-    color: #ffffff;
+    color: var(--color-default);
     font-size: 16px;
     font-weight: 300;
     line-height: 23px;
@@ -107,18 +110,18 @@ body {
     box-sizing: border-box;
     width: 134px;
     height: 42px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--color-default);
     border-radius: 4px;
     background: transparent;
     font-family: Raleway, Arial, "sans-serif";
-    color: #ffffff;
+    color: var(--color-default);
     font-size: 15px;
     font-weight: 600;
 }
 
 .main-screen-button-download:hover {
     cursor: pointer;
-    background: #ffffff;
+    background: var(--color-default);
     color: #000000;
     transition: background-color 0.7s linear;
 }
@@ -127,7 +130,7 @@ body {
     margin-top: 26px;
     width: 360px;
     border-radius: 6px 6px 6px 6px;
-    background-color: #ffffff;
+    background-color: var(--color-default);
 }
 
 .header-form {
@@ -145,7 +148,7 @@ body {
 }
 
 .free {
-    color: #ff8b38;
+    color: var(--color-primary);
 }
 
 .main-form {
@@ -160,7 +163,7 @@ body {
     width: 276px;
     height: 32px;
     font-family: Raleway, Arial, "sans-serif";
-    font-size: 14px;
+    font-size: var(--text-size);
     border: none;
     border-bottom: 1px solid #d6d6d6;
 }
@@ -185,9 +188,9 @@ input::placeholder {
     height: 54px;
     border: none;
     border-radius: 0 0 6px 6px;
-    background-color: #ff9b51;
+    background-color: var(--color-primary);
 
-    color: #ffffff;
+    color: var(--color-default);
     font-family: Raleway, Arial, "sans-serif";
     font-size: 15px;
     font-weight: 600;
@@ -206,7 +209,7 @@ input::placeholder {
     z-index: 100;
     width: 100%;
     min-width: 1402px;
-    background: #FFFFFF;
+    background: var(--color-default);
     box-shadow: 0 -1px 13px rgba(0, 0, 0, 0.25);
 }
 
@@ -236,9 +239,9 @@ input::placeholder {
     margin: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 20px;
-    color: #86878B;
+    color: var(--color-text-default);
 }
 
 .social-icons {
@@ -301,7 +304,7 @@ input::placeholder {
     font-size: 15px;
     line-height: 20px;
 
-    color: #FFFFFF;
+    color: var(--color-default);
 }
 
 .button-tab-1 {
@@ -350,11 +353,11 @@ input::placeholder {
     margin: 0 0 42px 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 20px;
 
 
-    color: #86878B;
+    color: var(--color-text-default);
 }
 
 .second-subtitle-tabs {
@@ -364,14 +367,14 @@ input::placeholder {
 .tabs-button-download {
     width: 134px;
     height: 42px;
-    background: #FA8F21;
-    border: 1px solid #FFFFFF;
+    background: var(--color-primary-100);
+    border: 1px solid var(--color-default);
     border-radius: 4px;
     font-family: Raleway, Arial, "sans-serif";
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: var(--color-default);
 }
 
 .tabs-button-download:hover {
@@ -427,16 +430,16 @@ input::placeholder {
     display: flex;
     width: 100px;
     height: 2px;
-    background-color: #FA8F21;
+    background-color: var(--color-primary-100);
 }
 
 .subtitle-heading {
     margin: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 20px;
-    color: #86878B;
+    color: var(--color-text-default);
 }
 
 .awesome-columns {
@@ -465,9 +468,9 @@ input::placeholder {
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 20px;
-    color: #86878B;
+    color: var(--color-text-default);
 }
 
 /*Pricing*/
@@ -514,8 +517,8 @@ input::placeholder {
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
-    border-bottom: #FFFFFF 1px solid;
+    color: var(--color-default);
+    border-bottom: var(--color-default) 1px solid;
 }
 
 .card-price {
@@ -526,8 +529,8 @@ input::placeholder {
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
-    color: #FFFFFF;
-    border-bottom: #FFFFFF 1px solid;
+    color: var(--color-default);
+    border-bottom: var(--color-default) 1px solid;
 }
 
 .card-sub-text {
@@ -536,27 +539,27 @@ input::placeholder {
     width: 343px;
     font-style: italic;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 24px;
 
     color: rgba(255, 255, 255, 0.7);
     background: #333333;
-    border-bottom: #FF8B38 5px solid;
+    border-bottom: var(--color-primary) 5px solid;
 }
 
-.card-slider{
+.card-slider {
     padding: 8px 0;
     text-align: center;
     width: 343px;
-    background: #FF8B38;
+    background: var(--color-primary);
 
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 24px;
 
 
-    color: #FFFFFF;
+    color: var(--color-default);
 }
 
 .card-feature {
@@ -564,11 +567,11 @@ input::placeholder {
     text-align: center;
     text-transform: uppercase;
     width: 343px;
-    background: #FFFFFF;
-    font-size: 14px;
+    background: var(--color-default);
+    font-size: var(--text-size);
     line-height: 24px;
 
-    color: #86878B;
+    color: var(--color-text-default);
     border-bottom: #F5F5F5 1px solid;
 }
 
@@ -620,9 +623,9 @@ input::placeholder {
     background: #F5F5F5;
     font-style: italic;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 16px;
-    color: #86878B;
+    color: var(--color-text-default);
 }
 
 .place-comment:after {
@@ -653,9 +656,9 @@ input::placeholder {
 }
 
 .user-profession {
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 16px;
-    color: #86878B;
+    color: var(--color-text-default);
 }
 
 /*Custom*/
@@ -682,21 +685,22 @@ input::placeholder {
     width: 416px;
 }
 
-.custom-text-color {
-    color: #FFFFFF;
+.custom-text {
+    text-align: center;
+    color: var(--color-default);
 }
 
-.custom-text-color.main-heading:after {
+.custom-text.main-heading:after {
     content: "";
     margin: 22px auto;
     display: flex;
     width: 64px;
     height: 2px;
-    background-color: #FFFFFF;
+    background-color: var(--color-default);
 }
 
 .custom-line {
-    background: #FFFFFF;
+    background: var(--color-default);
 }
 
 .custom-button {
@@ -730,7 +734,7 @@ input::placeholder {
     display: flex;
     width: 64px;
     height: 2px;
-    background-color: #FA8F21;
+    background-color: var(--color-primary-100);
 }
 
 .contact-text-content {
@@ -767,7 +771,7 @@ textarea {
     width: 509px;
     height: 152px;
     font-family: Raleway, Arial, "sans-serif";
-    font-size: 14px;
+    font-size: var(--text-size);
     border: none;
     border-bottom: 1px solid #d6d6d6;
 }
@@ -812,6 +816,6 @@ footer {
 
 .copyright {
     font-size: 12px;
-    line-height: 14px;
-    color: #FFFFFF;
+    line-height: var(--text-size);
+    color: var(--color-default);
 }

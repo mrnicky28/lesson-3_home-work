@@ -1,0 +1,12 @@
+:root {
+    /*Text*/
+    --text-size: 14px;
+
+    /*Color*/
+    --color-default: #ffffff;
+
+    --color-text-default: #86878B;
+
+    --color-primary:#ff8b38;
+    --color-primary-100:#FA8F21;
+}
