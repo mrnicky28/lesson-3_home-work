@@ -30,7 +30,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26b3818f-edac-4568-b867-845da5da2cf3" name="Default Changelist" comment="02.11-commit">
-      <change afterPath="$PROJECT_DIR$/css/variables.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -94,6 +93,8 @@
       <workItem from="1604330944522" duration="1283000" />
       <workItem from="1604592972729" duration="1836000" />
       <workItem from="1604828833403" duration="5758000" />
+      <workItem from="1604933685672" duration="2454000" />
+      <workItem from="1605000384848" duration="15885000" />
     </task>
     <task id="LOCAL-00001" summary="first-commit">
       <created>1603270279825</created>
@@ -130,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604331024880</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="09.11-commit">
+      <created>1604933709327</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604933709327</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +173,8 @@
     <MESSAGE value="first-commit" />
     <MESSAGE value="second-commit" />
     <MESSAGE value="02.11-commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="02.11-commit" />
+    <MESSAGE value="09.11-commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="09.11-commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603270171904">
@@ -184,10 +193,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603446961737" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604331038787">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604933721697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604331038787" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604933721697" />
     <state x="570" y="319" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603270140451">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

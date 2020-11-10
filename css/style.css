@@ -15,12 +15,13 @@ body {
 }
 
 .header-content {
-    padding: 18px 0;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 140px 0 145px;
     width: 1118px;
+    min-height: 63px;
 }
 
 .menu-main {
@@ -29,7 +30,8 @@ body {
     list-style: none;
 }
 
-.menu-main li {
+
+.menu-main li{
     margin: 0 22px 0 0;
     display: inline-block;
 }
@@ -39,7 +41,7 @@ body {
 }
 
 .menu-link {
-    padding: 20px 0;
+    padding: 100% 0;
     text-decoration: none;
     opacity: 0.69;
     color: var(--color-default);
@@ -82,6 +84,9 @@ body {
 }
 
 .main-screen-title {
+    position: relative;
+    padding-bottom: 32px;
+    margin: 0 0 32px 0;
     width: 542px;
     font-size: 36px;
     line-height: 42px;
@@ -90,7 +95,9 @@ body {
 
 .main-screen-title:after {
     content: "";
-    margin: 32px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: block;
     width: 100px;
     height: 2px;
@@ -134,18 +141,16 @@ body {
 }
 
 .header-form {
-    margin-bottom: 36px;
+    margin: 0;
     border-radius: 6px 6px 0 0;
     background-color: #DFDFDF;
-}
-
-.header-form-text {
     padding: 15px 0;
     text-align: center;
     color: #333333;
     font-size: 20px;
     font-weight: 800;
 }
+
 
 .free {
     color: var(--color-primary);
@@ -155,7 +160,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 56px;
+    margin: 36px 0 56px 0;
 }
 
 .main-input {
@@ -215,7 +220,7 @@ input::placeholder {
 
 .content-social-media {
     margin: 0 auto;
-    padding: 17px 142px 17px 142px;
+    padding: 17px 140px 17px 145px;
     width: 1119px;
     display: flex;
     justify-content: space-between;
@@ -265,6 +270,7 @@ input::placeholder {
 }
 
 .social-links {
+    display: inline-block;
     padding: 0;
     opacity: 1;
 }
@@ -282,7 +288,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 131px 143px 131px 143px;
+    padding: 131px 140px 131px 145px;
     width: 1116px;
 }
 
@@ -396,8 +402,8 @@ input::placeholder {
 
 .awesome-content {
     margin: 0 auto;
-    padding: 102px 144px 113px 144px;
-    width: 1114px;
+    padding: 102px 140px 113px 145px;
+    width: 1125px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,8 +421,10 @@ input::placeholder {
 }
 
 .main-heading {
+    position: relative;
     text-align: center;
-    margin: 0;
+    padding-bottom: 22px;
+    margin: 0 0 22px 0;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -426,9 +434,13 @@ input::placeholder {
 
 .main-heading:after {
     content: "";
-    margin: 22px auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     display: flex;
-    width: 100px;
+    width: 102px;
     height: 2px;
     background-color: var(--color-primary-100);
 }
@@ -486,7 +498,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 102px 146px 111px 147px;
+    padding: 102px 140px 111px 145px;
     width: 1109px;
 }
 
@@ -547,6 +559,10 @@ input::placeholder {
     border-bottom: var(--color-primary) 5px solid;
 }
 
+.card-professional .card-sub-text{
+    border-bottom: none;
+}
+
 .card-slider {
     padding: 8px 0;
     text-align: center;
@@ -595,7 +611,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 73px 159px 102px 177px;
+    padding: 73px 159px 102px 159px;
     width: 1066px;
 }
 
@@ -617,9 +633,10 @@ input::placeholder {
     width: 290px;
 }
 
-.text-comment {
-    margin: 0;
-    padding: 25px 0 18px 12px;
+.comment-place {
+    position: relative;
+    margin: 0 0 28px 0;
+    padding: 25px 20px 18px 12px;
     background: #F5F5F5;
     font-style: italic;
     font-weight: normal;
@@ -628,12 +645,11 @@ input::placeholder {
     color: var(--color-text-default);
 }
 
-.place-comment:after {
+.comment-place:after {
     content: "";
-    margin: 0 0 11px 25px;
-    display: block;
-    width: 0;
-    height: 0;
+    position: absolute;
+    left: 25px;
+    bottom: -17px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 17px solid #F5F5F5;
@@ -643,12 +659,12 @@ input::placeholder {
     display: flex;
     align-items: center;
 }
-
-.user-information {
-    padding: 0 0 0 16px;
+.user-image{
+    margin: 0 16px 0 0;
 }
 
 .user-name {
+    margin: 0;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
@@ -656,6 +672,7 @@ input::placeholder {
 }
 
 .user-profession {
+    margin: 0;
     font-size: var(--text-size);
     line-height: 16px;
     color: var(--color-text-default);
@@ -670,7 +687,7 @@ input::placeholder {
     background-image: url(../img/custom/architecture.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-color: rgba(0, 0, 0, 0.50);
 
 
@@ -681,36 +698,25 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 54px 494px 54px 490px;
-    width: 416px;
+    padding: 73px 140px 102px 145px;
+    width: 1066px;
+}
+.custom-text-content{
+    margin-bottom: 38px;
 }
 
 .custom-text {
-    text-align: center;
     color: var(--color-default);
 }
 
 .custom-text.main-heading:after {
-    content: "";
-    margin: 22px auto;
-    display: flex;
     width: 64px;
-    height: 2px;
     background-color: var(--color-default);
 }
 
 .custom-line {
     background: var(--color-default);
 }
-
-.custom-button {
-    margin: 38px 0 0 0;
-}
-
-.custom-button:hover {
-    margin: 38px 0 0 0;
-}
-
 /*Contact*/
 
 .contact {
@@ -724,17 +730,12 @@ input::placeholder {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 73px 155px 105px 155px;
+    padding: 73px 140px 105px 145px;
     width: 1092px;
 }
 
-.main-heading:after {
-    content: "";
-    margin: 22px auto;
-    display: flex;
+.contact-heading:after {
     width: 64px;
-    height: 2px;
-    background-color: var(--color-primary-100);
 }
 
 .contact-text-content {
@@ -746,17 +747,18 @@ input::placeholder {
     justify-content: space-between;
     margin-bottom: 46px;
     width: 1092px;
+    max-height: 155px;
 }
 
 .contact-form {
+    margin: 0;
     padding: 0;
-    width: 527px;
-    margin-bottom: 0;
+    max-width: 527px;
 }
 
 .contact-input {
     padding: 0 0 0 10px;
-    width: 527px;
+    width: 516px;
     height: 32px;
 }
 
@@ -769,7 +771,6 @@ textarea {
     margin: 0;
     padding: 5px 0 0 10px;
     width: 509px;
-    height: 152px;
     font-family: Raleway, Arial, "sans-serif";
     font-size: var(--text-size);
     border: none;
