@@ -1,6 +1,8 @@
 :root {
     /*Text*/
     --text-size: 14px;
+    --text-family-open-sans:'Open Sans', sans-serif;
+    --text-family-raleway: Raleway, Arial, "sans-serif";
 
     /*Color*/
     --color-default: #ffffff;
@@ -9,4 +11,6 @@
 
     --color-primary:#ff8b38;
     --color-primary-100:#FA8F21;
+
+
 }
